@@ -1,38 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title></title>
-	<style>
-		
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sushi Grab </title>
+    <link type="text/css" href="style.css" rel="stylesheet"> 
+    <link rel="shortcut icon" href="favicon.ico" />
 </head>
+
 <body>
-
-	<h1>Whack a mole- Query</h1>
-	<span class="score">0</span>
-	<div class="message"></div>
-	<button id="start">Start</button>
-	<div class="game"></div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-	<script>
-
-		var score =0;
-
-
-		$(function(){
-			$('#start').click(startGame);
-			});
-
-		function startGame(){
-			score=0;
-			$('.score').text(score);
-		}
-
-
-
-	</script>
-
+    <h1>Grab the sushi. A game in jQuery. SCORE: <span class="score"></span> </h1>
+    <div class="message"></div>
+    <button id="start">Start</button>
+    <div class="game"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
